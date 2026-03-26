@@ -29,7 +29,7 @@ public class WebSecurityConfig {
                         .authenticated())
                 .csrf(csrfConfig -> csrfConfig.disable())
                 .sessionManagement(sessionConfig -> sessionConfig
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS));
 //                .formLogin(Customizer.withDefaults());
 
 
