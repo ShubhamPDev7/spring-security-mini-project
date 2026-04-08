@@ -1,5 +1,6 @@
 package com.shubham.securityapp.securityapplication.dto;
 
+import com.shubham.securityapp.securityapplication.entities.enums.Permission;
 import com.shubham.securityapp.securityapplication.entities.enums.Role;
 import lombok.Data;
 
@@ -11,4 +12,5 @@ public class SignUpDto {
     private String password;
     private String name;
     private Set<Role> roles;
+    private Set<Permission> permissions;
 }
